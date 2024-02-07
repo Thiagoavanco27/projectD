@@ -1,10 +1,12 @@
+"""Urls configuration for the 'philosophies' app."""
+
 from django.urls import path
 
 from . import views
 
-app_name = "philosophies"
+
 
 urlpatterns = [
-    path("", views.home, name="Home"),
-    path("meditations/<int:id>/", views.meditation, name="Meditation"),
+    path("", views.home, name="medi-home"),
+    path("meditations/<int:id>/", views.meditation, name="medi-meditation"),
 ]
